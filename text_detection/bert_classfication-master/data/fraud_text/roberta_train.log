@@ -1,0 +1,463 @@
+num_labels 是5
+====================  Preparing for training  ====================
+	* Loading training data...
+数据集个数为9422
+各个分类标签个数
+输入例子
+通知，各位准备购车的小伙伴们，全力大众x号到x号，展厅元宵活动，订车额外赠送一次常规保养
+input_ids
+tensor([ 101, 6858, 4761, 8024, 1392,  855, 1114, 1906, 6579, 6756, 4638, 2207,
+         832,  845,  812, 8024, 1059, 1213, 1920,  830,  166, 1384, 1168,  166,
+        1384, 8024, 2245, 1324, 1039, 2156, 3833, 1220, 8024, 6370, 6756, 7583,
+        1912, 6615, 6843,  671, 3613, 2382, 6226,  924, 1075,  102,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0])
+token_type_ids
+tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0])
+attention_mask
+tensor([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0])
+labels
+tensor(0)
+实际序列转换后的长度为150, 设置最长为150
+	* Loading validation data...
+数据集个数为1178
+输入例子
+你好，我是XXX。我注意到你曾在学生时代在某平台注册了一个账户。现在需要取消该账号否则会影响你的征信记录。为了帮助你解决这个问题并确保顺利操作完成注销过程，我需要添加您的QQ来指导您进行相关步骤的操作和确认信息填写等事宜以确保整个流程的顺利进行.请按照我的指示来完成这个任务：首先打开常用的网络借款平台上查看自己的贷款额度并将其提现至银行卡上；然后根据我们的要求将钱汇入指定账户中以便我们处理后续问题即可恢复良好信用状态了！
+input_ids
+tensor([ 101,  872, 1962, 8024, 2769, 3221, 8790,  511, 2769, 3800, 2692, 1168,
+         872, 3295, 1762, 2110, 4495, 3198,  807, 1762, 3378, 2398, 1378, 3800,
+        1085,  749,  671,  702, 6572, 2787,  511, 4385, 1762, 7444, 6206, 1357,
+        3867, 6421, 6572, 1384, 1415, 1156,  833, 2512, 1510,  872, 4638, 2519,
+         928, 6381, 2497,  511,  711,  749, 2376, 1221,  872, 6237, 1104, 6821,
+         702, 7309, 7579, 2400, 4802,  924, 7556, 1164, 3082,  868, 2130, 2768,
+        3800, 7218, 6814, 4923, 8024, 2769, 7444, 6206, 3924, 1217, 2644, 4638,
+        8186, 3341, 2900, 2193, 2644, 6822, 6121, 4685, 1068, 3635, 7752, 4638,
+        3082,  868, 1469, 4802, 6371,  928, 2622, 1856, 1091, 5023,  752, 2139,
+         809, 4802,  924, 3146,  702, 3837, 4923, 4638, 7556, 1164, 6822, 6121,
+         119, 6435, 2902, 4212, 2769, 4638, 2900, 4850, 3341, 2130, 2768, 6821,
+         702,  818, 1218, 8038, 7674, 1044, 2802, 2458, 2382, 4500, 4638, 5381,
+        5317,  955, 3621, 2398, 1378,  102])
+token_type_ids
+tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0])
+attention_mask
+tensor([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1])
+labels
+tensor(2)
+实际序列转换后的长度为150, 设置最长为150
+	* Building model...
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       0.00      0.00      0.00       777
+                 public_security_fraud       0.10      1.00      0.18       100
+                                 loans       0.00      0.00      0.00       100
+        impersonating_customer_service       0.00      0.00      0.00       101
+impersonating_leadership_acquaintances       0.03      0.05      0.04       100
+
+                              accuracy                           0.09      1178
+                             macro avg       0.03      0.21      0.04      1178
+                          weighted avg       0.01      0.09      0.02      1178
+
+	* Validation loss before training: 2.5154, accuracy: 8.9134%
+
+ ==================== Training model on device: cuda ====================
+* Training epoch 1:
+-> Training time: 238.7179s, loss = 0.6635, accuracy: 74.5808%
+* Validation for epoch 1:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       0.98      1.00      0.99       777
+                 public_security_fraud       0.53      0.83      0.65       100
+                                 loans       0.92      0.12      0.21       100
+        impersonating_customer_service       0.86      0.66      0.75       101
+impersonating_leadership_acquaintances       0.62      0.88      0.72       100
+
+                              accuracy                           0.87      1178
+                             macro avg       0.78      0.70      0.66      1178
+                          weighted avg       0.90      0.87      0.85      1178
+
+-> Valid. time: 9.9136s, loss: 0.3051, accuracy: 86.9270% 
+
+save data
+* Training epoch 2:
+-> Training time: 237.4082s, loss = 0.2765, accuracy: 89.3229%
+* Validation for epoch 2:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      0.99      0.99       777
+                 public_security_fraud       0.94      0.95      0.95       100
+                                 loans       0.82      0.97      0.89       100
+        impersonating_customer_service       0.94      0.82      0.88       101
+impersonating_leadership_acquaintances       0.92      0.95      0.94       100
+
+                              accuracy                           0.97      1178
+                             macro avg       0.93      0.94      0.93      1178
+                          weighted avg       0.97      0.97      0.97      1178
+
+-> Valid. time: 9.9616s, loss: 0.0957, accuracy: 96.6044% 
+
+save data
+* Training epoch 3:
+-> Training time: 237.7063s, loss = 0.1212, accuracy: 95.6379%
+* Validation for epoch 3:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      0.99      1.00       777
+                 public_security_fraud       0.84      0.97      0.90       100
+                                 loans       0.97      0.84      0.90       100
+        impersonating_customer_service       0.89      0.93      0.91       101
+impersonating_leadership_acquaintances       0.94      0.94      0.94       100
+
+                              accuracy                           0.97      1178
+                             macro avg       0.93      0.93      0.93      1178
+                          weighted avg       0.97      0.97      0.97      1178
+
+-> Valid. time: 9.9048s, loss: 0.1040, accuracy: 96.6893% 
+
+save data
+* Training epoch 4:
+-> Training time: 237.5380s, loss = 0.1065, accuracy: 96.3914%
+* Validation for epoch 4:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.80      0.97      0.87       100
+                                 loans       0.99      0.70      0.82       100
+        impersonating_customer_service       0.84      0.93      0.88       101
+impersonating_leadership_acquaintances       0.99      0.95      0.97       100
+
+                              accuracy                           0.96      1178
+                             macro avg       0.92      0.91      0.91      1178
+                          weighted avg       0.97      0.96      0.96      1178
+
+-> Valid. time: 9.8970s, loss: 0.1335, accuracy: 96.1800% 
+
+* Training epoch 5:
+-> Training time: 237.4848s, loss = 0.0826, accuracy: 97.3466%
+* Validation for epoch 5:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       0.99      1.00      1.00       777
+                 public_security_fraud       0.97      0.93      0.95       100
+                                 loans       0.97      0.92      0.94       100
+        impersonating_customer_service       0.92      0.97      0.94       101
+impersonating_leadership_acquaintances       0.97      0.96      0.96       100
+
+                              accuracy                           0.98      1178
+                             macro avg       0.96      0.96      0.96      1178
+                          weighted avg       0.98      0.98      0.98      1178
+
+-> Valid. time: 9.9125s, loss: 0.0636, accuracy: 98.1324% 
+
+save data
+* Training epoch 6:
+-> Training time: 237.4100s, loss = 0.0617, accuracy: 98.0153%
+* Validation for epoch 6:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.97      0.94      0.95       100
+                                 loans       0.97      0.92      0.94       100
+        impersonating_customer_service       0.92      0.98      0.95       101
+impersonating_leadership_acquaintances       0.98      0.97      0.97       100
+
+                              accuracy                           0.98      1178
+                             macro avg       0.97      0.96      0.96      1178
+                          weighted avg       0.98      0.98      0.98      1178
+
+-> Valid. time: 9.9396s, loss: 0.0549, accuracy: 98.3871% 
+
+save data
+* Training epoch 7:
+-> Training time: 237.5155s, loss = 0.0562, accuracy: 98.1320%
+* Validation for epoch 7:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.99      0.92      0.95       100
+                                 loans       0.96      0.95      0.95       100
+        impersonating_customer_service       0.93      0.98      0.96       101
+impersonating_leadership_acquaintances       0.97      1.00      0.99       100
+
+                              accuracy                           0.99      1178
+                             macro avg       0.97      0.97      0.97      1178
+                          weighted avg       0.99      0.99      0.99      1178
+
+-> Valid. time: 9.9510s, loss: 0.0520, accuracy: 98.7267% 
+
+save data
+* Training epoch 8:
+-> Training time: 237.4612s, loss = 0.0448, accuracy: 98.6733%
+* Validation for epoch 8:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.99      0.93      0.96       100
+                                 loans       0.97      0.93      0.95       100
+        impersonating_customer_service       0.91      0.98      0.94       101
+impersonating_leadership_acquaintances       0.95      1.00      0.98       100
+
+                              accuracy                           0.98      1178
+                             macro avg       0.96      0.97      0.96      1178
+                          weighted avg       0.98      0.98      0.98      1178
+
+-> Valid. time: 9.8970s, loss: 0.0537, accuracy: 98.3871% 
+
+* Training epoch 9:
+-> Training time: 237.0449s, loss = 0.0391, accuracy: 98.7370%
+* Validation for epoch 9:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.97      0.94      0.95       100
+                                 loans       0.95      0.94      0.94       100
+        impersonating_customer_service       0.93      0.98      0.95       101
+impersonating_leadership_acquaintances       0.97      0.97      0.97       100
+
+                              accuracy                           0.98      1178
+                             macro avg       0.96      0.97      0.96      1178
+                          weighted avg       0.98      0.98      0.98      1178
+
+-> Valid. time: 9.8986s, loss: 0.0451, accuracy: 98.3871% 
+
+* Training epoch 10:
+-> Training time: 237.2000s, loss = 0.0306, accuracy: 99.0129%
+* Validation for epoch 10:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.99      0.93      0.96       100
+                                 loans       0.97      0.91      0.94       100
+        impersonating_customer_service       0.89      0.98      0.93       101
+impersonating_leadership_acquaintances       0.98      1.00      0.99       100
+
+                              accuracy                           0.98      1178
+                             macro avg       0.97      0.96      0.96      1178
+                          weighted avg       0.99      0.98      0.98      1178
+
+-> Valid. time: 9.8445s, loss: 0.0708, accuracy: 98.4720% 
+
+* Training epoch 11:
+-> Training time: 236.9224s, loss = 0.0278, accuracy: 98.9705%
+* Validation for epoch 11:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.93      0.97      0.95       100
+                                 loans       0.97      0.92      0.94       100
+        impersonating_customer_service       0.94      0.97      0.96       101
+impersonating_leadership_acquaintances       0.98      0.98      0.98       100
+
+                              accuracy                           0.98      1178
+                             macro avg       0.96      0.97      0.97      1178
+                          weighted avg       0.98      0.98      0.98      1178
+
+-> Valid. time: 9.8443s, loss: 0.0488, accuracy: 98.4720% 
+
+* Training epoch 12:
+-> Training time: 237.4237s, loss = 0.0191, accuracy: 99.2995%
+* Validation for epoch 12:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.94      0.96      0.95       100
+                                 loans       0.97      0.90      0.93       100
+        impersonating_customer_service       0.91      0.98      0.94       101
+impersonating_leadership_acquaintances       1.00      0.97      0.98       100
+
+                              accuracy                           0.98      1178
+                             macro avg       0.96      0.96      0.96      1178
+                          weighted avg       0.98      0.98      0.98      1178
+
+-> Valid. time: 9.9514s, loss: 0.0609, accuracy: 98.3871% 
+
+* Training epoch 13:
+-> Training time: 237.0285s, loss = 0.0212, accuracy: 99.3101%
+* Validation for epoch 13:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.98      0.95      0.96       100
+                                 loans       0.96      0.96      0.96       100
+        impersonating_customer_service       0.96      0.97      0.97       101
+impersonating_leadership_acquaintances       0.96      1.00      0.98       100
+
+                              accuracy                           0.99      1178
+                             macro avg       0.97      0.98      0.97      1178
+                          weighted avg       0.99      0.99      0.99      1178
+
+-> Valid. time: 9.9643s, loss: 0.0438, accuracy: 98.8115% 
+
+save data
+* Training epoch 14:
+-> Training time: 237.3007s, loss = 0.0167, accuracy: 99.3950%
+* Validation for epoch 14:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.97      0.96      0.96       100
+                                 loans       0.96      0.94      0.95       100
+        impersonating_customer_service       0.93      0.98      0.96       101
+impersonating_leadership_acquaintances       0.98      0.98      0.98       100
+
+                              accuracy                           0.99      1178
+                             macro avg       0.97      0.97      0.97      1178
+                          weighted avg       0.99      0.99      0.99      1178
+
+-> Valid. time: 9.8217s, loss: 0.0444, accuracy: 98.6418% 
+
+* Training epoch 15:
+-> Training time: 237.2888s, loss = 0.0197, accuracy: 99.2889%
+* Validation for epoch 15:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.98      0.94      0.96       100
+                                 loans       0.93      0.97      0.95       100
+        impersonating_customer_service       0.93      0.97      0.95       101
+impersonating_leadership_acquaintances       1.00      0.96      0.98       100
+
+                              accuracy                           0.99      1178
+                             macro avg       0.97      0.97      0.97      1178
+                          weighted avg       0.99      0.99      0.99      1178
+
+-> Valid. time: 9.8373s, loss: 0.0501, accuracy: 98.6418% 
+
+* Training epoch 16:
+-> Training time: 236.8956s, loss = 0.0150, accuracy: 99.4906%
+* Validation for epoch 16:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.94      0.97      0.96       100
+                                 loans       0.96      0.97      0.97       100
+        impersonating_customer_service       0.98      0.96      0.97       101
+impersonating_leadership_acquaintances       1.00      0.98      0.99       100
+
+                              accuracy                           0.99      1178
+                             macro avg       0.98      0.98      0.98      1178
+                          weighted avg       0.99      0.99      0.99      1178
+
+-> Valid. time: 9.9381s, loss: 0.0410, accuracy: 98.9813% 
+
+save data
+* Training epoch 17:
+-> Training time: 237.7792s, loss = 0.0125, accuracy: 99.5755%
+* Validation for epoch 17:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.93      0.97      0.95       100
+                                 loans       0.96      0.93      0.94       100
+        impersonating_customer_service       0.93      0.98      0.96       101
+impersonating_leadership_acquaintances       0.98      0.94      0.96       100
+
+                              accuracy                           0.98      1178
+                             macro avg       0.96      0.96      0.96      1178
+                          weighted avg       0.98      0.98      0.98      1178
+
+-> Valid. time: 9.8619s, loss: 0.0565, accuracy: 98.3022% 
+
+* Training epoch 18:
+-> Training time: 237.5865s, loss = 0.0109, accuracy: 99.6498%
+* Validation for epoch 18:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.95      0.97      0.96       100
+                                 loans       0.96      0.95      0.95       100
+        impersonating_customer_service       0.96      0.96      0.96       101
+impersonating_leadership_acquaintances       1.00      0.99      0.99       100
+
+                              accuracy                           0.99      1178
+                             macro avg       0.97      0.97      0.97      1178
+                          weighted avg       0.99      0.99      0.99      1178
+
+-> Valid. time: 9.8135s, loss: 0.0446, accuracy: 98.8964% 
+
+* Training epoch 19:
+-> Training time: 237.2085s, loss = 0.0124, accuracy: 99.6073%
+* Validation for epoch 19:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.98      0.97      0.97       100
+                                 loans       0.95      0.97      0.96       100
+        impersonating_customer_service       0.96      0.97      0.97       101
+impersonating_leadership_acquaintances       1.00      0.98      0.99       100
+
+                              accuracy                           0.99      1178
+                             macro avg       0.98      0.98      0.98      1178
+                          weighted avg       0.99      0.99      0.99      1178
+
+-> Valid. time: 9.8340s, loss: 0.0439, accuracy: 99.0662% 
+
+save data
+* Training epoch 20:
+-> Training time: 237.3536s, loss = 0.0103, accuracy: 99.6498%
+* Validation for epoch 20:
+正在对验证集进行测试
+                                        precision    recall  f1-score   support
+
+                           normal_text       1.00      1.00      1.00       777
+                 public_security_fraud       0.97      0.96      0.96       100
+                                 loans       0.96      0.97      0.97       100
+        impersonating_customer_service       0.97      0.97      0.97       101
+impersonating_leadership_acquaintances       0.97      0.99      0.98       100
+
+                              accuracy                           0.99      1178
+                             macro avg       0.97      0.98      0.98      1178
+                          weighted avg       0.99      0.99      0.99      1178
+
+-> Valid. time: 9.9066s, loss: 0.0435, accuracy: 98.8964% 
+

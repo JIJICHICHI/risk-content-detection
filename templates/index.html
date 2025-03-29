@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>风险内容检测</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white h-screen flex flex-col justify-center items-center">
+    <div class="w-full max-w-2xl p-6 bg-gray-800 rounded-xl shadow-md">
+        <h1 class="text-2xl font-bold text-center mb-4">风险内容检测</h1>
+        <div id="chat-box" class="h-80 overflow-y-auto p-3 border border-gray-600 rounded mb-4"></div>
+
+        <div class="flex gap-2">
+            <input id="user-input" type="text" class="w-full p-2 rounded bg-gray-700 border border-gray-600 focus:outline-none" placeholder="输入检测内容...">
+            <button id="send-btn" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">发送</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("send-btn").addEventListener("click", async () => {
+            const input = document.getElementById("user-input");
+            const chatBox = document.getElementById("chat-box");
+            const userMessage = input.value.trim();
+
+            if (!userMessage) return;
+
+            chatBox.innerHTML += `<div class='text-right mb-2'><span class='bg-blue-500 px-3 py-1 rounded-lg'>${userMessage}</span></div>`;
+            input.value = "";
+
+            const response = await fetch("/detect", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ text: userMessage })
+            });
+
+            const data = await response.json();
+            chatBox.innerHTML += `<div class='text-left mb-2'><span class='bg-gray-700 px-3 py-1 rounded-lg'>${data.result}</span></div>`;
+            chatBox.scrollTop = chatBox.scrollHeight;
+        });
+    </script>
+</body>
+</html>
